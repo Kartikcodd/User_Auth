@@ -1,38 +1,88 @@
-.App {
+/* App.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #e0e0e0, #ffffff);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.auth-container h2 {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  font-size: 24px;
+  color: #000;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid #333;
+  background-color: transparent;
+  outline: none;
+  font-size: 14px;
+}
+
+.auth-container input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #5a007b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.auth-container button:hover {
+  background-color: #4a0065;
+}
+
+.auth-container p {
+  color: red;
+  margin-top: 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.auth-container .redirect-text {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 14px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.auth-container .redirect-text a {
+  color: #5a007b;
+  text-decoration: none;
+  font-weight: bold;
+}
+.auth-container .forgot-password {
+  text-align: right;
+  margin-top: 1rem;
+  font-size: 14px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
